@@ -763,10 +763,35 @@
     /* hide floats on small screens */
     @media (max-width: 900px) { .hero-floats { display: none; } }
 
+
+    /* ── LOGO BAR ── */
+    .logo-bar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 22px 24px 0;
+    }
+    .logo-bar img {
+      height: 72px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 18px rgba(201,168,76,0.25));
+      transition: filter 0.3s;
+    }
+    .logo-bar img:hover {
+      filter: drop-shadow(0 4px 28px rgba(201,168,76,0.5));
+    }
   </style>
 </head>
 <body>
 <div class="wrap">
+
+<!-- ══ LOGO BAR ══ -->
+<div class="logo-bar">
+  <img src="logo.png" alt="Beyond 9 to 5 Club by XSITE Capital Investment" />
+</div>
 
 <!-- ══════════════════════════════════════
      HERO
@@ -842,7 +867,6 @@
   </div>
   <div class="badge">Midweek Breakthroughs</div>
   <p class="host-line">Hosted by <span>Addie Agarwal</span></p>
-  <p class="host-line">A Community Only Initiative by <span>XSITE Capital</span> and <span>The Beyond 9 to 5 Club</span></p>
   <h1>AI for the Everyday Business Owner</h1>
   <p class="hero-sub">
     A hands-on, no-jargon, 2-part live workshop showing you exactly how to use AI to save time, impress clients, and grow your business — starting this month.
