@@ -107,43 +107,12 @@
       letter-spacing: -0.03em;
       max-width: 860px;
       margin: 0 auto 14px;
-      display: inline-block;
-      background: linear-gradient(
-        120deg,
-        #1D1D1F 0%,
-        #5E5CE6 22%,
-        #7D7AFF 38%,
-        #1D1D1F 50%,
-        #5E5CE6 72%,
-        #1D1D1F 100%
-      );
-      background-size: 250% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 9s linear infinite;
+      color: #1D1D1F;
     }
 
     /* Highlight the "AI" inside the title */
     .hero h1 .ai-highlight {
-      background: linear-gradient(
-        120deg,
-        #5E5CE6 0%,
-        #7D7AFF 30%,
-        #5E5CE6 55%,
-        #7D7AFF 80%,
-        #5E5CE6 100%
-      );
-      background-size: 250% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 9s linear infinite;
-    }
-
-    @keyframes shimmer {
-      0%   { background-position: 200% center; }
-      100% { background-position: -200% center; }
+      color: #5E5CE6;
     }
 
     .hero-class-name {
@@ -212,11 +181,11 @@
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.01em;
-      color: #ffffff;
-      background: linear-gradient(135deg, #7D7AFF 0%, #5E5CE6 55%, #3634A3 100%);
+      color: #1D1D1F;
+      background: linear-gradient(135deg, #FFE357 0%, #FFD60A 55%, #E6BC00 100%);
       box-shadow:
-        0 1px 0 rgba(255,255,255,0.3) inset,
-        0 8px 28px rgba(94,92,230,0.35);
+        0 1px 0 rgba(255,255,255,0.4) inset,
+        0 8px 28px rgba(255,214,10,0.4);
       border: none;
       cursor: pointer;
       text-decoration: none;
@@ -224,7 +193,7 @@
     }
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset, 0 12px 36px rgba(94,92,230,0.45);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 12px 36px rgba(255,214,10,0.45);
     }
 
     .invite-note {
@@ -426,12 +395,12 @@
       flex-shrink: 0;
       width: 30px; height: 30px;
       border-radius: 8px;
-      background: linear-gradient(135deg, #1C1B70, var(--gold));
+      background: linear-gradient(135deg, #FFE357 0%, #FFD60A 100%);
       display: flex; align-items: center; justify-content: center;
       font-size: 0.72rem;
       font-weight: 900;
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(94,92,230,0.2);
+      color: #1D1D1F;
+      box-shadow: 0 2px 8px rgba(255,214,10,0.35);
     }
     .learn-text h3 {
       font-size: 0.93rem;
@@ -463,13 +432,13 @@
     .agenda-part-num {
       width: 40px; height: 40px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #1C1B70, var(--gold));
+      background: linear-gradient(135deg, #FFE357 0%, #FFD60A 100%);
       display: flex; align-items: center; justify-content: center;
       font-size: 0.85rem;
       font-weight: 900;
-      color: #fff;
+      color: #1D1D1F;
       flex-shrink: 0;
-      box-shadow: 0 4px 14px rgba(94,92,230,0.2);
+      box-shadow: 0 4px 14px rgba(255,214,10,0.35);
     }
     .agenda-part-info h3 {
       font-size: 1.1rem;
