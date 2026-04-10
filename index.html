@@ -104,11 +104,57 @@
       line-height: 1.08;
       letter-spacing: -0.03em;
       max-width: 860px;
-      margin: 0 auto 22px;
-      background: linear-gradient(150deg, #ffffff 30%, #C9A84C 80%, #E2C47A 100%);
+      margin: 0 auto 14px;
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        #C9A84C 30%,
+        #E2C47A 45%,
+        #ffffff 50%,
+        #C9A84C 65%,
+        #ffffff 80%,
+        #E2C47A 100%
+      );
+      background-size: 250% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+
+    /* Highlight the "AI" inside the title */
+    .hero h1 .ai-highlight {
+      background: linear-gradient(
+        120deg,
+        #FFD700 0%,
+        #ffffff 30%,
+        #FFD700 50%,
+        #E2C47A 65%,
+        #FFD700 80%,
+        #ffffff 100%
+      );
+      background-size: 250% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0%   { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+
+    .hero-class-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 auto 22px;
+      opacity: 0.85;
     }
 
     .hero-sub {
@@ -649,7 +695,8 @@
 
   <div class="badge">Midweek Breakthroughs</div>
   <p class="host-line">Hosted by <span>Addie Agarwal</span></p>
-  <h1>AI for the Everyday Business Owner</h1>
+  <h1>The Br<span class="ai-highlight">AI</span>n Trust</h1>
+  <p class="hero-class-name">AI for the Everyday Business Owner</p>
   <p class="hero-sub">
     A hands-on, no-jargon, 2-part live workshop showing you exactly how to use AI to save time, impress clients, and grow your business — starting this month.
   </p>
