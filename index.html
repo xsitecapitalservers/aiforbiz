@@ -526,6 +526,117 @@
     .for-card p { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.55; }
 
     /* ─────────────────────────────────────────
+       PRESENTERS
+    ───────────────────────────────────────── */
+    .presenter-section {
+      position: relative;
+      z-index: 1;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px 72px;
+    }
+    .presenter-lead {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      padding: 44px 48px;
+      border-radius: 24px;
+    }
+    .presenter-lead .presenter-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      flex-shrink: 0;
+      border: 3px solid rgba(255,255,255,0.9);
+      box-shadow: 0 8px 32px rgba(94,92,230,0.15);
+    }
+    .presenter-photo-placeholder {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, rgba(94,92,230,0.15), rgba(125,122,255,0.1));
+      border: 3px solid rgba(255,255,255,0.9);
+      box-shadow: 0 8px 32px rgba(94,92,230,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .presenter-info { flex: 1; }
+    .presenter-role {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(94,92,230,0.08);
+      border: 1px solid rgba(94,92,230,0.18);
+      border-radius: 999px;
+      padding: 4px 14px;
+      margin-bottom: 12px;
+    }
+    .presenter-name {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .presenter-bio {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    /* Team row */
+    .presenter-team {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .presenter-card {
+      text-align: center;
+      padding: 36px 24px 32px;
+      border-radius: 20px;
+    }
+    .presenter-card .presenter-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 3px solid rgba(255,255,255,0.9);
+      box-shadow: 0 6px 24px rgba(94,92,230,0.14);
+      margin: 0 auto 18px;
+      display: block;
+    }
+    .presenter-card .presenter-photo-placeholder {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(94,92,230,0.15), rgba(125,122,255,0.1));
+      border: 3px solid rgba(255,255,255,0.9);
+      box-shadow: 0 6px 24px rgba(94,92,230,0.14);
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .presenter-card .presenter-role { margin-bottom: 8px; }
+    .presenter-card .presenter-name { font-size: 1.15rem; margin-bottom: 0; }
+
+    @media (max-width: 640px) {
+      .presenter-lead { flex-direction: column; text-align: center; padding: 32px 24px; gap: 28px; }
+      .presenter-team { grid-template-columns: 1fr; }
+    }
+
+    /* ─────────────────────────────────────────
        DIVIDER
     ───────────────────────────────────────── */
     .divider {
@@ -1047,6 +1158,59 @@
       <h3>Coaches &amp; Consultants</h3>
       <p>Build proposals, automate admin, and create content that sounds exactly like you.</p>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     PRESENTERS
+══════════════════════════════════════ -->
+<section class="presenter-section">
+  <div class="section-tag" style="text-align:center;margin-bottom:12px;">Your Presenter</div>
+  <h2 class="section-title" style="text-align:center;margin-bottom:36px;">Meet the Instructor</h2>
+
+  <!-- Lead presenter: Addie -->
+  <div class="presenter-lead glass">
+    <img src="Addie.jpg" alt="Addie Agarwal" class="presenter-photo"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+    <div class="presenter-photo-placeholder" style="display:none;">👤</div>
+    <div class="presenter-info">
+      <span class="presenter-role">Presenter · CTO</span>
+      <div class="presenter-name">Addie Agarwal</div>
+      <p class="presenter-bio">A technologist, marketer, and brand strategist with over 35 years of experience, Addie runs two of his own businesses while serving as CTO and Director of Marketing at XSITE Capital. Over the past 15+ years, he has partnered with more than 200 businesses to build memorable brands and implement smart automations that drive real, lasting growth — and now he's bringing that same expertise directly to you.</p>
+    </div>
+  </div>
+
+  <!-- Leadership team -->
+  <div class="section-tag" style="text-align:center;margin:48px 0 12px;">The Team Behind The BrAIn Trust</div>
+  <h2 class="section-title" style="text-align:center;margin-bottom:28px;">XSITE Capital Leadership</h2>
+  <div class="presenter-team">
+
+    <div class="presenter-card glass">
+      <img src="Julius.jpg" alt="Julius" class="presenter-photo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="presenter-photo-placeholder" style="display:none;">👤</div>
+      <span class="presenter-role">CEO</span>
+      <div class="presenter-name">Julius</div>
+    </div>
+
+    <div class="presenter-card glass">
+      <img src="Leslie.jpg" alt="Leslie" class="presenter-photo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="presenter-photo-placeholder" style="display:none;">👤</div>
+      <span class="presenter-role">COO</span>
+      <div class="presenter-name">Leslie</div>
+    </div>
+
+    <div class="presenter-card glass">
+      <img src="tenny.jpg" alt="Tenny" class="presenter-photo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="presenter-photo-placeholder" style="display:none;">👤</div>
+      <span class="presenter-role">CGO</span>
+      <div class="presenter-name">Tenny</div>
+    </div>
+
   </div>
 </section>
 
