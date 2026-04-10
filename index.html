@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI for Business Owners | Midweek Breakthroughs</title>
+  <title>The BrAIn Trust | AI for Business Owners</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --gold:       #C9A84C;
-      --gold-light: #E2C47A;
-      --gold-dim:   rgba(201,168,76,0.15);
-      --glass-bg:   rgba(255,255,255,0.06);
-      --glass-border: rgba(255,255,255,0.13);
-      --glass-shine:  rgba(255,255,255,0.18);
-      --text-primary: #F0EDE8;
-      --text-secondary: #9B97A0;
-      --text-muted: #5C5868;
-      --bg-deep: #06080F;
+      --gold:       #7BA185;
+      --gold-light: #A8C4AD;
+      --gold-dim:   rgba(123,161,133,0.15);
+      --glass-bg:   rgba(255,255,255,0.05);
+      --glass-border: rgba(255,255,255,0.09);
+      --glass-shine:  rgba(255,255,255,0.13);
+      --text-primary: #ECF1EE;
+      --text-secondary: #8A9C90;
+      --text-muted: #4D6055;
+      --bg-deep: #0B0F0D;
     }
 
     html { scroll-behavior: smooth; }
@@ -38,9 +38,9 @@
       position: fixed;
       inset: 0;
       background:
-        radial-gradient(ellipse 700px 500px at 15% 20%,  rgba(30,40,100,0.45) 0%, transparent 70%),
-        radial-gradient(ellipse 600px 400px at 85% 70%,  rgba(80,40,10,0.35) 0%, transparent 70%),
-        radial-gradient(ellipse 800px 600px at 50% 100%, rgba(20,60,80,0.3)  0%, transparent 70%);
+        radial-gradient(ellipse 700px 500px at 15% 20%,  rgba(20,55,35,0.5)  0%, transparent 70%),
+        radial-gradient(ellipse 600px 400px at 85% 70%,  rgba(25,45,55,0.4)  0%, transparent 70%),
+        radial-gradient(ellipse 800px 600px at 50% 100%, rgba(15,40,30,0.45) 0%, transparent 70%);
       pointer-events: none;
       z-index: 0;
     }
@@ -80,9 +80,9 @@
       text-transform: uppercase;
       margin-bottom: 28px;
       color: var(--gold-light);
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.35);
-      box-shadow: 0 0 24px rgba(201,168,76,0.1);
+      background: rgba(123,161,133,0.1);
+      border: 1px solid rgba(123,161,133,0.3);
+      box-shadow: 0 0 24px rgba(123,161,133,0.08);
     }
 
     .host-line {
@@ -110,12 +110,12 @@
       background: linear-gradient(
         120deg,
         #ffffff 0%,
-        #C9A84C 30%,
-        #E2C47A 45%,
+        #7BA185 30%,
+        #A8C4AD 45%,
         #ffffff 50%,
-        #C9A84C 65%,
+        #7BA185 65%,
         #ffffff 80%,
-        #E2C47A 100%
+        #A8C4AD 100%
       );
       background-size: 250% auto;
       -webkit-background-clip: text;
@@ -128,11 +128,11 @@
     .hero h1 .ai-highlight {
       background: linear-gradient(
         120deg,
-        #FFD700 0%,
+        #C2DEC6 0%,
         #ffffff 30%,
-        #FFD700 50%,
-        #E2C47A 65%,
-        #FFD700 80%,
+        #7BA185 50%,
+        #A8C4AD 65%,
+        #C2DEC6 80%,
         #ffffff 100%
       );
       background-size: 250% auto;
@@ -189,7 +189,7 @@
     .price-free {
       font-size: 2.4rem;
       font-weight: 900;
-      color: #6EE7B7;
+      color: #A8C4AD;
       letter-spacing: -0.02em;
     }
     .price-label {
@@ -200,7 +200,7 @@
     }
     .price-label strong {
       display: block;
-      color: #6EE7B7;
+      color: #A8C4AD;
       font-size: 0.9rem;
       margin-bottom: 2px;
     }
@@ -213,11 +213,11 @@
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.01em;
-      color: #06080F;
-      background: linear-gradient(135deg, #D4AF5A 0%, #C9A84C 50%, #A8872C 100%);
+      color: #0B0F0D;
+      background: linear-gradient(135deg, #90B896 0%, #7BA185 50%, #5D8567 100%);
       box-shadow:
-        0 1px 0 rgba(255,255,255,0.35) inset,
-        0 8px 28px rgba(201,168,76,0.35);
+        0 1px 0 rgba(255,255,255,0.25) inset,
+        0 8px 28px rgba(123,161,133,0.35);
       border: none;
       cursor: pointer;
       text-decoration: none;
@@ -225,7 +225,7 @@
     }
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 1px 0 rgba(255,255,255,0.35) inset, 0 12px 36px rgba(201,168,76,0.45);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 12px 36px rgba(123,161,133,0.45);
     }
 
     .invite-note {
@@ -306,9 +306,9 @@
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      background: rgba(110,231,183,0.1);
-      border: 1px solid rgba(110,231,183,0.25);
-      color: #6EE7B7;
+      background: rgba(123,161,133,0.1);
+      border: 1px solid rgba(123,161,133,0.25);
+      color: #A8C4AD;
     }
 
     /* ─────────────────────────────────────────
@@ -388,14 +388,14 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       background: var(--gold-dim);
-      border: 1px solid rgba(201,168,76,0.3);
+      border: 1px solid rgba(123,161,133,0.25);
       color: var(--gold-light);
       white-space: nowrap;
     }
     .part-line {
       flex: 1;
       height: 1px;
-      background: linear-gradient(90deg, rgba(201,168,76,0.2), transparent);
+      background: linear-gradient(90deg, rgba(123,161,133,0.2), transparent);
     }
     .part-date-note {
       font-size: 0.75rem;
@@ -421,18 +421,18 @@
       box-shadow:
         0 2px 0 var(--glass-shine) inset,
         0 20px 56px rgba(0,0,0,0.55),
-        0 0 0 1px rgba(201,168,76,0.2);
+        0 0 0 1px rgba(123,161,133,0.2);
     }
     .learn-num {
       flex-shrink: 0;
       width: 30px; height: 30px;
       border-radius: 8px;
-      background: linear-gradient(135deg, #8B6914, var(--gold));
+      background: linear-gradient(135deg, #4A7055, var(--gold));
       display: flex; align-items: center; justify-content: center;
       font-size: 0.72rem;
       font-weight: 900;
       color: #fff;
-      box-shadow: 0 2px 8px rgba(201,168,76,0.3);
+      box-shadow: 0 2px 8px rgba(123,161,133,0.3);
     }
     .learn-text h3 {
       font-size: 0.93rem;
@@ -464,13 +464,13 @@
     .agenda-part-num {
       width: 40px; height: 40px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #8B6914, var(--gold));
+      background: linear-gradient(135deg, #4A7055, var(--gold));
       display: flex; align-items: center; justify-content: center;
       font-size: 0.85rem;
       font-weight: 900;
       color: #fff;
       flex-shrink: 0;
-      box-shadow: 0 4px 14px rgba(201,168,76,0.3);
+      box-shadow: 0 4px 14px rgba(123,161,133,0.3);
     }
     .agenda-part-info h3 {
       font-size: 1.1rem;
@@ -490,7 +490,7 @@
       position: absolute;
       left: 11px; top: 4px; bottom: 4px;
       width: 2px;
-      background: linear-gradient(to bottom, rgba(201,168,76,0.6), rgba(201,168,76,0.1), transparent);
+      background: linear-gradient(to bottom, rgba(123,161,133,0.6), rgba(123,161,133,0.1), transparent);
       border-radius: 2px;
     }
     .agenda-item { position: relative; margin-bottom: 26px; }
@@ -502,7 +502,7 @@
       border-radius: 50%;
       background: var(--gold);
       border: 2px solid var(--bg-deep);
-      box-shadow: 0 0 0 2px rgba(201,168,76,0.4);
+      box-shadow: 0 0 0 2px rgba(123,161,133,0.4);
     }
     .agenda-time {
       font-size: 0.74rem;
@@ -584,7 +584,7 @@
       position: absolute;
       top: 50%; left: 50%; transform: translate(-50%, -50%);
       width: 500px; height: 300px;
-      background: radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(123,161,133,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
     .value-box h2 {
@@ -617,7 +617,7 @@
       color: var(--text-secondary);
     }
     .value-tag del { color: var(--text-muted); }
-    .value-tag strong { color: #6EE7B7; font-size: 1rem; }
+    .value-tag strong { color: #A8C4AD; font-size: 1rem; }
     .value-invite {
       margin-top: 20px;
       font-size: 0.85rem;
@@ -672,11 +672,11 @@
       height: 72px;
       width: auto;
       object-fit: contain;
-      filter: drop-shadow(0 4px 18px rgba(201,168,76,0.25));
+      filter: drop-shadow(0 4px 18px rgba(123,161,133,0.25));
       transition: filter 0.3s;
     }
     .logo-bar img:hover {
-      filter: drop-shadow(0 4px 28px rgba(201,168,76,0.5));
+      filter: drop-shadow(0 4px 28px rgba(123,161,133,0.4));
     }
   </style>
 </head>
@@ -693,7 +693,6 @@
 ══════════════════════════════════════ -->
 <section class="hero">
 
-  <div class="badge">Midweek Breakthroughs</div>
   <p class="host-line">Hosted by <span>Addie Agarwal</span></p>
   <h1>The Br<span class="ai-highlight">AI</span>n Trust</h1>
   <p class="hero-class-name">AI for the Everyday Business Owner</p>
@@ -707,7 +706,7 @@
     <div class="price-free">FREE</div>
     <div class="price-label">
       <strong>Members &amp; Invited Guests</strong>
-      For the Midweek Breakthroughs community
+      For members &amp; invited guests
     </div>
   </div>
 
@@ -1069,7 +1068,7 @@
     <h2>A $497 Workshop — Completely Free</h2>
     <p>
       A comparable two-part AI workshop from a business coach or consultant runs $497 or more.
-      For Midweek Breakthroughs members and their invited guests, your seat costs nothing.
+      For members and their invited guests, your seat costs nothing.
     </p>
     <div class="value-tags">
       <div class="value-tag glass">Full Series Value: <del>$497</del></div>
